@@ -19,7 +19,7 @@ def has_consecutive_same_numbers(numbers):
 
 
 def make_words_set():
-    with open('less_word.txt', 'r') as f:
+    with open('dictionaries/less_word.txt', 'r') as f:
         less_word = {x.strip().lower()for x in f.read().split('\n')}
     return {x for x in less_word if len(x)>2}
 
